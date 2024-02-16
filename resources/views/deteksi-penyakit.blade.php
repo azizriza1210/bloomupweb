@@ -86,7 +86,8 @@
 
             // Display only the class with the highest probability
             const predictionElement = document.createElement("div");
-            predictionElement.textContent = `${predictedClass}: ${maxProbability.toFixed(2)}`;
+            // predictionElement.textContent = `${predictedClass}: ${maxProbability.toFixed(2)}`;
+            predictionElement.textContent = `Nama Penyakit : ${predictedClass}`;
             labelContainer.appendChild(predictionElement);
         }
 

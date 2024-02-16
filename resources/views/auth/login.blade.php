@@ -57,8 +57,8 @@
                             <h2 class="mt-4 text-light text-center">
                                 Masuk
                             </h2>
-                            <form action="{{ url('login') }}" method="POST">
-                                @csrf
+                            {{-- <form action="{{ url('login') }}" method="POST">
+                                @csrf --}}
                                 <input 
                                 name="email"
                                 class="form-control mb-2"
@@ -73,9 +73,9 @@
                                 />
                                 
                                 <div class="text-center">
-                                    <button class="button_filter" type="submit">Masuk</button>
+                                    <a href="{{ url('/') }}" class="button_filter" type="submit">Masuk</a>
                                 </div>
-                            </form>
+                            {{-- </form> --}}
                         </div>
                     </div>
                 </div>

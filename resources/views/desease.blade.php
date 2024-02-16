@@ -75,8 +75,8 @@
                         </div>
                         {{-- <label class="button-unggah"><input type="file">Unggah Gambar</label> --}}
                         {{-- <input type="file" id="unggah" accept="image/*" onchange="previewImage(event)"> --}}
-                            <div class="p-2">Atau</div>
-                        <button class="button-unggah">Ambil Gambar</button>
+                            {{-- <div class="p-2">Atau</div>
+                        <button class="button-unggah">Ambil Gambar</button> --}}
                     </div>
                 </div>
             </div>
@@ -144,7 +144,8 @@
 
             // Tampilkan hanya kelas dengan probabilitas tertinggi
             const predictionElement = document.createElement("div");
-            predictionElement.textContent = `${predictedClass}: ${maxProbability.toFixed(2)}`;
+            // predictionElement.textContent = `${predictedClass}: ${maxProbability.toFixed(2)}`;
+            predictionElement.textContent = `Nama Penyakit : ${predictedClass}`;
             labelContainer.appendChild(predictionElement);
         }
 

@@ -18,6 +18,7 @@ use App\Http\Controllers\DeteksiPenyakitController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/translate', [HomeController::class, 'translate']);
 Route::get('artikel', [ArtikelController::class, 'index']);
@@ -26,6 +27,7 @@ Route::get('/desease', [DeteksiPenyakitController::class, 'index']);
 Route::get('recomended', [HomeController::class, 'recomended']);
 Route::get('login', [AuthController::class, 'showLoginForm']);
 Route::get('register', [AuthController::class, 'showRegisterForm']);
+Route::post('register', [AuthController::class, 'register']);
 Route::get('webcam', [WebcamController::class, 'index']);
 Route::post('webcam', [WebcamController::class, 'store'])->name('webcam.capture');
 Route::get('/news', [ArtikelController::class, 'index']);

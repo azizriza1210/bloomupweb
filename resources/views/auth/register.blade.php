@@ -57,31 +57,31 @@
                             <h2 class="mt-2 text-light text-center">
                                 Daftar
                             </h2>
-                            <form action="{{ url('login') }}" method="POST">
-                                @csrf
-                                <input 
-                                name="email"
-                                class="form-control mb-2"
-                                type="text" 
-                                placeholder="Email">
+                            {{-- <form action="{{ url('login') }}" method="POST"> --}}
+                                {{-- @csrf --}}
+                            <input 
+                            name="email"
+                            class="form-control mb-2"
+                            type="text" 
+                            placeholder="Email">
 
-                                <input 
-                                name="email"
-                                class="form-control mb-2"
-                                type="text" 
-                                placeholder="Nama Pengguna">
-                        
-                                <input 
-                                name="password"
-                                class="form-control mb-2"
-                                placeholder="Kata Sandi"
-                                type="password"
-                                />
-                                
-                                <div class="text-center">
-                                  <button class="button_filter" type="submit">Masuk</button>
-                                </div>
-                            </form>
+                            <input 
+                            name="email"
+                            class="form-control mb-2"
+                            type="text" 
+                            placeholder="Nama Pengguna">
+                    
+                            <input 
+                            name="password"
+                            class="form-control mb-2"
+                            placeholder="Kata Sandi"
+                            type="password"
+                            />
+                            
+                            <div class="text-center">
+                                <a class="button_filter" href="{{ url('/login') }}">Masuk</a>
+                            </div>
+                            {{-- </form> --}}
                         </div>
                     </div>
                 </div>
