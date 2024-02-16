@@ -11,6 +11,6 @@
     </ul>
     
     <div style="padding-right: 66px" class="buttons">
-        <a href="{{ url('login') }}" class="loginmen">Log in</a>
+        <a href="{{ url('login') }}" class="loginmen">Log out</a>
     </div>
 </nav>
