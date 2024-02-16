@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500&display=swap');
+
+/*+++++++++++Variable CSS nich+++++++++++++*/
+:root {
+  --primarycolor: #0D3824;
+  --homesecol: #CCFCBB;
+
+  /*------Font dan Sejenisnya---------*/
+  --body-font: 'Mitr', sans-serif;
+  --nav-font-size: 17px;
+  --font-medium: 400;
+  --font-light: 400;
+  --font-regular: 300;
+  --font-bold: 500;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mitr', sans-serif;
+}
+.header{
+  width: 100%;
+  height: 12vh;
+  background-color: var(--primarycolor);
+  padding-top: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+nav{
+  width: 100%;
+  overflow: hidden;
+  padding: 1px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primarycolor);
+  position: relative;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 15px;
+}
+nav ul li a{
+  text-decoration: none;
+  transition: 0.5s;
+  color: var(--homesecol);
+  font-size: var(--nav-font-size);
+  font-weight: var(--font-light);
+  text-transform: uppercase;
+  margin-top: 1.1rem;
+}
+nav ul li a:hover{
+  color: #BE8652;
+}
+
+.login {
+    display: none;
+}
+
+.text-nav{
+  font-size: 18px;
+}
+
+.loginmen{
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+loginmen:hover{
+  color: #BE8652;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 62vh;
+  background-color: var(--primarycolor);
+  padding-left: 5%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.content h1{
+  color: var(--homesecol);
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: 0;
+  width: 300px;
+  position: relative;
+}
+
+
+.deskripsi{
+  color: var(--homesecol);
+  font-size: 30px;
+  font-weight: var(--font-regular);
+  line-height: 33.9px;
+  position: relative;
+}
+
+a{
+  color: #fff;
+}
+.link,
+.link1 {
+  margin-top: 55px;
+}
+
+.link1 {
+  top: 1px;
+  position: relative;
+  justify-content: center;
+}
+
+/*------------------ARTIKEL--------------*/
+.articlestext{
+  color: var(--primarycolor);
+  text-decoration: none;
+  background: #ffffff00;
+  font-size: 30px;
+  font-weight: var(--font-bold);
+  transition: 0.5s;
+  padding-bottom: 15px;;
+}
+.link .articles:hover{
+  background: transparent;
+  border: 0px solid #fff;
+  color: #63b962;
+}
+
+.text {
+  color: var(--primarycolor);
+  background: var(--homesecol);
+  transition: 0.5s;
+  border-radius: 25px;
+  width: 150px;
+  height: 37px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.seeall:hover {
+  background-color: var(--primarycolor); /* Warna latar belakang tombol saat dihover */
+  color: white; /* Warna teks tombol */
+}
+
+.seeall {
+  color: var(--primarycolor);
+  font-weight: var(--font-medium);
+  text-decoration: none ;
+}
+
+.article {
+  position: relative;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  min-height: 75vh;
+}
+
+.rectangle{
+  position: relative;
+  border-radius: 90px 0 0 0;
+  background-color: #daf7f8;
+  width: 380px;
+  height: 62vh;
+}
+
+.roundedbiru {
+  position: absolute;
+  right: 0px;
+}
+
+.textdec {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 50vh;
+  justify-content: center;
+
+}
+.gambar {
+  width:100%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 50px;
+}
+.bungabesar {
+  position: relative;
+  left: -170px;
+  width: 420.56px;
+  bottom: 20px;
+}
+.bungakecil {
+  position: relative;
+  width: 200px;
+  top: 195px;
+  height: 200px;
+  left: -280px;
+  padding-bottom: 26px;
+}
+
+.homebawah {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  justify-content: space-between;
+  min-height: 35vh;
+}
+.deseasetext{
+  color: var(--primarycolor);
+  text-decoration: none;
+  background: #ffffff00;
+  font-size: 40px;
+  font-weight: var(--font-bold);
+  transition: 0.5s;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  display: flex; /* Menampilkan gambar dalam satu slide secara horizontal */
+  min-width: 60%; /* Setengah dari total lebar untuk menampilkan dua gambar */
+}
+
+.carousel-item img {
+  width: 415px; /* Menyesuaikan lebar gambar */
+  box-sizing: border-box;
+  padding-bottom: 20px;
+  padding-right: 30px;
+}
+
+.gambar-container {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+.gambar-gelap {
+  width: 340px;
+  height: 270px;
+  filter: brightness(0.5);
+  border-radius: 20px;
+}
+
+.teks-di-gambar {
+  position: absolute;
+  left: 20px; /* Sesuaikan posisi horizontal teks di dalam gambar */
+  color: white; /* Warna teks */
+}
+
+.teks-di-gambar.tanggal {
+  bottom: 150px; /* Sesuaikan posisi vertikal teks di dalam gambar */
+  font-size: 16px; /* Ukuran teks tanggal */
+}
+
+.teks-di-gambar.judul-artikel {
+  bottom: 90px; /* Sesuaikan posisi vertikal teks di dalam gambar */
+  font-size: 20px; /* Ukuran teks judul artikel */
+  font-weight: 520; /* Ketebalan teks judul artikel */
+}
+
+.button {
+  font-weight: 410;
+  position: absolute;
+  bottom: 45px; /* Sesuaikan posisi vertikal tombol di dalam gambar */
+  left: 20px; /* Sesuaikan posisi horizontal tombol di dalam gambar */
+  background-color: var(--homesecol); /* Warna latar belakang tombol */
+  color: var(--primarycolor); /* Warna teks tombol */
+  border: none; /* Hilangkan border */
+  padding: 10px 20px; /* Padding tombol */
+  border-radius: 25px; /* Border radius tombol */
+  cursor: pointer; /* Kursor berubah menjadi tanda tangan saat diarahkan ke tombol */
+}
+
+.button:hover {
+  background-color: var(--primarycolor); /* Warna latar belakang tombol saat dihover */
+  color: white; /* Warna teks tombol */
+}
+
+
+
+/*----------Desease Detection------------*/
+
+.container-grid {
+  display: grid;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  grid-template-columns: 1fr 1fr; /* Memisahkan container menjadi dua kolom yang sama lebarnya */
+}
+
+.kolom {
+  padding: 10px;
+}
+
+.button_bawah {
+  font-weight: 410;
+  position: absolute;
+  background-color: var(--homesecol); /* Warna latar belakang tombol */
+  color: var(--primarycolor); /* Warna teks tombol */
+  border: none; /* Hilangkan border */
+  padding: 10px 20px; /* Padding tombol */
+  border-radius: 25px; /* Border radius tombol */
+  cursor: pointer; /* Kursor berubah menjadi tanda tangan saat diarahkan ke tombol */
+}
+
+.button_bawah:hover {
+  background-color: var(--primarycolor); /* Warna latar belakang tombol saat dihover */
+  color: white; /* Warna teks tombol */
+}

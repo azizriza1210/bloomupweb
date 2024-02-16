@@ -1,0 +1,133 @@
+.login-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--green2);
+  width: 845px;
+  height: 100vh;
+}
+.form-login-child,
+.form-login-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-11xl);
+  background-color: var(--primary);
+  box-shadow: 0 0 41.4px 11px rgba(0, 0, 0, 0.4);
+  width: 728px;
+  height: 426px;
+}
+.form-login-item {
+  border-radius: var(--br-11xl) 0 0 var(--br-11xl);
+  background-color: var(--green2);
+  box-shadow: -11px 0 12px 10px rgba(0, 0, 0, 0.25);
+  width: 268px;
+}
+.gambar {
+  position: absolute;
+  top: 98px;
+  left: 63px;
+  width: 143px;
+  height: 143px;
+  object-fit: cover;
+}
+.input-password,
+.input-username {
+  border: 0;
+  outline: 0;
+  font-weight: 300;
+  font-family: var(--font-mitr);
+  font-size: var(--font-size-xl);
+  background-color: var(--blue1);
+  position: absolute;
+  left: 312px;
+  border-radius: var(--br-31xl);
+  width: 383px;
+  height: 57px;
+  padding: var(--padding-base) var(--padding-13xl);
+  box-sizing: border-box;
+  color: var(--color-darkslategray-100);
+}
+.input-username {
+  top: 146px;
+  cursor: pointer;
+}
+.input-password {
+  top: 221px;
+}
+.house-of-plants {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.label-login,
+.namaapp {
+  position: absolute;
+  top: 54px;
+  left: 375px;
+  width: 257px;
+  height: 86px;
+}
+.namaapp {
+  top: 238px;
+  left: 48px;
+  width: 172px;
+  height: 58px;
+  font-size: 35px;
+  color: var(--primary);
+}
+.button-login-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-31xl);
+  background-color: var(--green2);
+  border: 2px solid var(--color-darkolivegreen);
+  box-sizing: border-box;
+}
+.button {
+  position: absolute;
+  width: 62.9%;
+  top: 15.52%;
+  left: 18.28%;
+  font-weight: 500;
+  display: inline-block;
+}
+.button-login {
+  position: absolute;
+  top: 315px;
+  left: 422px;
+  width: 163px;
+  height: 51px;
+  cursor: pointer;
+  font-size: var(--font-size-xl);
+  color: var(--font1);
+}
+.form-login {
+  position: absolute;
+  top: 203px;
+  left: 577px;
+  width: 728px;
+  height: 426px;
+}
+.login {
+  position: relative;
+  background-color: var(--primary);
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  font-size: 45px;
+  color: var(--blue1);
+  font-family: var(--font-mitr);
+}

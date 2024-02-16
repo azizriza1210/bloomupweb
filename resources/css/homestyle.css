@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500&display=swap');
+
+/*+++++++++++Variable CSS nich+++++++++++++*/
+:root {
+  --primarycolor: #0D3824;
+  --homesecol: #CCFCBB;
+
+  /*------Font dan Sejenisnya---------*/
+  --body-font: 'Mitr', sans-serif;
+  --nav-font-size: 17px;
+  --font-medium: 400;
+  --font-light: 200;
+  --font-regular: 300;
+  --font-bold: 500;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mitr', sans-serif;
+}
+body{
+  color: #fff;
+}
+.header{
+  width: 100%;
+  height: 12vh;
+  background-color: var(--primarycolor);
+  padding-top: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+nav{
+  overflow: hidden;
+  padding: 1px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primarycolor);
+  position: relative;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 15px;
+}
+nav ul li a{
+  text-decoration: none;
+  transition: 0.5s;
+  color: var(--homesecol);
+  font-size: var(--nav-font-size);
+  font-weight: var(--font-light);
+  text-transform: uppercase;
+}
+nav ul li a:hover{
+  color: #f9004d;
+}
+
+.login {
+    display: none;
+}
+
+.loginmen{
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 18px;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 62vh;
+  background-color: var(--primarycolor);
+  padding-left: 5%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.content h1{
+  color: var(--homesecol);
+  font-size: 65px;
+  font-weight: 500;
+  letter-spacing: 0;
+  width: 386px;
+  position: relative;
+}
+
+
+.deskripsi{
+  color: var(--homesecol);
+  font-size: 35px;
+  font-weight: var(--font-regular);
+  line-height: 33.9px;
+  position: relative;
+}
+
+a{
+  color: #fff;
+}
+.link,
+.link1 {
+  margin-top: 55px;
+}
+
+.link1 {
+  top: 1px;
+  position: relative;
+  justify-content: center;
+}
+
+/*------------------ARTIKEL--------------*/
+.articlestext{
+  color: var(--primarycolor);
+  text-decoration: none;
+  background: #ffffff00;
+  font-size: 40px;
+  font-weight: var(--font-bold);
+  transition: 0.5s;
+}
+.link .articles:hover{
+  background: transparent;
+  border: 0px solid #fff;
+  color: #63b962;
+}
+
+.text {
+  color: var(--primarycolor);
+  background: var(--homesecol);
+  transition: 0.5s;
+  border-radius: 25px;
+  width: 100px;
+  height: 37px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.seeall:hover {
+  color: #fff;
+}
+
+.seeall {
+  color: var(--primarycolor);
+  font-weight: var(--font-medium);
+  text-decoration: none ;
+}
+
+.article {
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rectangle{
+  position: relative;
+  border-radius: 90px 0 0 0;
+  background-color: #daf7f8;
+  width: 600px;
+  height: 62vh;
+}
+
+.roundedbiru {
+  position: absolute;
+  right: 0px;
+}
+
+.textdec {
+  width: 1030px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 50vh;
+  justify-content: center;
+
+}
+.gambar {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+
+}
+.bungabesar {
+  position: relative;
+  left: -277px;
+  width: 597.56px;
+}
+.bungakecil {
+  position: relative;
+  bottom: -333px;
+
+  right: 333px;
+  width: 279px;
+  height: 235px;
+}
+
+
+
+
+
+
+
+/*----------Desease Detection------------*/

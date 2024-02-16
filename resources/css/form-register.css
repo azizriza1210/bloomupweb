@@ -1,0 +1,146 @@
+.register-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--green2);
+  width: 845px;
+  height: 100vh;
+}
+.form-register-child,
+.form-register-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-11xl);
+  background-color: var(--primary);
+  box-shadow: 0 0 41.4px 11px rgba(0, 0, 0, 0.4);
+  width: 728px;
+  height: 426px;
+}
+.form-register-inner {
+  border-radius: var(--br-11xl) 0 0 var(--br-11xl);
+  background-color: var(--green2);
+  box-shadow: -11px 0 12px 10px rgba(0, 0, 0, 0.25);
+  width: 268px;
+}
+.gambar {
+  position: absolute;
+  top: 98px;
+  left: 63px;
+  width: 143px;
+  height: 143px;
+  object-fit: cover;
+}
+.input-username {
+  top: 184px;
+  left: 313px;
+}
+.input-email,
+.input-password,
+.input-username {
+  border: 0;
+  outline: 0;
+  font-weight: 300;
+  font-family: var(--font-mitr);
+  font-size: var(--font-size-xl);
+  background-color: var(--blue1);
+  position: absolute;
+  border-radius: var(--br-31xl);
+  width: 383px;
+  height: 57px;
+  padding: var(--padding-base) var(--padding-13xl);
+  box-sizing: border-box;
+  color: var(--color-darkslategray-100);
+}
+.input-email {
+  top: 116px;
+  left: 313px;
+  cursor: pointer;
+}
+.input-password {
+  top: 252px;
+  left: 312px;
+}
+.house-of-plants {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.label-register,
+.namaapp {
+  position: absolute;
+  top: 28px;
+  left: 375px;
+  width: 257px;
+  height: 86px;
+}
+.namaapp {
+  top: 238px;
+  left: 48px;
+  width: 172px;
+  height: 58px;
+  font-size: 35px;
+  color: var(--primary);
+}
+.button-register-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-31xl);
+  background-color: var(--green2);
+  border: 2px solid var(--color-darkolivegreen);
+  box-sizing: border-box;
+}
+.button {
+  position: absolute;
+  width: 62.9%;
+  top: 15.52%;
+  left: 18.28%;
+  font-weight: 500;
+  display: inline-block;
+}
+.button-register {
+  position: absolute;
+  top: 335px;
+  left: 410px;
+  width: 188px;
+  height: 51px;
+  cursor: pointer;
+  font-size: var(--font-size-xl);
+  color: var(--font1);
+}
+.form-register,
+.register {
+  position: absolute;
+  top: 203px;
+  left: 577px;
+  width: 728px;
+  height: 426px;
+}
+.register {
+  top: 0;
+  left: 0;
+  background-color: var(--primary);
+  width: -webkit-fill-available;
+  height: 100vh;
+  overflow: hidden;
+}
+.register-parent {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  font-size: 45px;
+  color: var(--blue1);
+  font-family: var(--font-mitr);
+}

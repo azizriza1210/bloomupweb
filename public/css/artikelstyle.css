@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500&display=swap');
+
+/*+++++++++++Variable CSS nich+++++++++++++*/
+:root {
+  --primarycolor: #0D3824;
+  --homesecol: #CCFCBB;
+
+  /*------Font dan Sejenisnya---------*/
+  --body-font: 'Mitr', sans-serif;
+  --nav-font-size: 17px;
+  --font-medium: 400;
+  --font-light: 200;
+  --font-regular: 300;
+  --font-bold: 500;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mitr', sans-serif;
+}
+
+
+
+body{
+    color: #fff;
+  }
+  .header{
+    width: 100%;
+    height: 12vh;
+    background-color: var(--primarycolor);
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  nav{
+    overflow: hidden;
+    padding: 1px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primarycolor);
+    position: relative;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+  }
+  nav ul li a{
+    text-decoration: none;
+    transition: 0.5s;
+    color: var(--homesecol);
+    font-size: var(--nav-font-size);
+    font-weight: var(--font-light);
+    text-transform: uppercase;
+  }
+  nav ul li a:hover{
+    color: #BE8652;
+  }
+  
+  .login {
+      display: none;
+  }
+  
+  .loginmen{
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 18px;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 62vh;
+    background-color: var(--primarycolor);
+    padding-left: 5%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .content h1{
+    color: var(--homesecol);
+    font-size: 65px;
+    font-weight: 500;
+    letter-spacing: 0;
+    width: 386px;
+    position: relative;
+  }
+  a{
+    color: #fff;
+  }
+  .link,
+  .link1 {
+    margin-top: 55px;
+  }
+  
+  .link1 {
+    top: 1px;
+    position: relative;
+    justify-content: center;
+  }
+
+  /*--------Artikel---------*/
+  .wrapper {
+    width: 100%;
+    max-width: 31.25rem;
+    margin: 2rem auto;
+  }
+  
+  .label {
+    font-size: .625rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: +1.3px;
+    margin-bottom: 1rem;
+  }
+  
+  .searchBar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #searchQueryInput {
+    width: 100%;
+    height: 2.8rem;
+    background: #f5f5f5;
+    outline: none;
+    border: none;
+    border-radius: 1.625rem;
+    padding: 0 3.5rem 0 1.5rem;
+    font-size: 1rem;
+  }
+  
+  #searchQuerySubmit {
+    width: 3.5rem;
+    height: 2.8rem;
+    margin-left: -3.5rem;
+    background: none;
+    border: none;
+    outline: none;
+  }
+  
+  #searchQuerySubmit:hover {
+    cursor: pointer;
+  }
+
+  .article {
+    position: relative;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    min-height: 75vh;
+  }
+
+  .articlestext{
+    color: var(--primarycolor);
+    text-decoration: none;
+    background: #ffffff00;
+    font-size: 30px;
+    font-weight: var(--font-bold);
+    transition: 0.5s;
+    padding-bottom: 15px;;
+  }
+
+  .tanggalartikel{
+    color: var(--primarycolor);
+    text-decoration: none;
+    background: #ffffff00;
+    font-size: 14px;
+    font-weight: 5px;
+    transition: 0.5s;
+    padding-bottom: 15px;;
+  }
+
+  .carousel {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    display: flex; /* Menampilkan gambar dalam satu slide secara horizontal */
+    min-width: 60%; /* Setengah dari total lebar untuk menampilkan dua gambar */
+  }
+  
+  .carousel-item img {
+    width: 415px; /* Menyesuaikan lebar gambar */
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    padding-right: 30px;
+  }
+  
+  .gambar-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .gambar-gelap {
+    filter: brightness(0.5);
+  }
+  
+  .teks-di-gambar {
+    position: absolute;
+    bottom: 60px; /* Sesuaikan posisi vertikal teks di dalam gambar */
+    left: 20px; /* Sesuaikan posisi horizontal teks di dalam gambar */
+    color: white; /* Warna teks */
+  }
+  
+  .teks-di-gambar.tanggal {
+    bottom: 150px; /* Sesuaikan posisi vertikal teks di dalam gambar */
+    left: 20px; /* Sesuaikan posisi horizontal teks di dalam gambar */
+    font-size: 16px; /* Ukuran teks tanggal */
+  }
+  
+  .teks-di-gambar.judul-artikel {
+    bottom: 90px; /* Sesuaikan posisi vertikal teks di dalam gambar */
+    left: 20px; /* Sesuaikan posisi horizontal teks di dalam gambar */
+    font-size: 20px; /* Ukuran teks judul artikel */
+    font-weight: 520; /* Ketebalan teks judul artikel */
+  }
+  
+  .button {
+    font-weight: 410;
+    position: absolute;
+    bottom: 45px; /* Sesuaikan posisi vertikal tombol di dalam gambar */
+    left: 20px; /* Sesuaikan posisi horizontal tombol di dalam gambar */
+    background-color: var(--homesecol); /* Warna latar belakang tombol */
+    color: var(--primarycolor); /* Warna teks tombol */
+    border: none; /* Hilangkan border */
+    padding: 10px 20px; /* Padding tombol */
+    border-radius: 25px; /* Border radius tombol */
+    cursor: pointer; /* Kursor berubah menjadi tanda tangan saat diarahkan ke tombol */
+  }
+  
+  .button:hover {
+    background-color: var(--primarycolor); /* Warna latar belakang tombol saat dihover */
+    color: white; /* Warna teks tombol */
+  }
+
+  .container-flex {
+    display: flex;
+    padding-bottom: 5%;
+  }
+  
+  .kolom {
+    flex: 1; /* Menggunakan fleksibilitas untuk membagi ruang secara merata */
+    padding: 10px;
+  }
+  
